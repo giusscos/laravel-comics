@@ -22,6 +22,12 @@ img {
   max-width: 100%;
 }
 
+select {
+  border: 0px solid;
+  color: currentColor;
+  background-color: transparent;
+}
+
 .container {
   padding: 0 0.75rem;
   margin: 0 auto;
@@ -41,12 +47,30 @@ img {
   border: 2px solid transparent;
 }
 
+header .banner_header {
+  gap: 1.5rem;
+  display: flex;
+  padding: 0.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2195f3;
+}
+header .banner_header span {
+  margin-left: auto;
+}
+header .banner_header select {
+  font-weight: bold;
+}
 header .container {
   display: flex;
   padding: 0.5rem 0.75rem 0;
 }
 header .container .logo_wrapper {
   margin-right: auto;
+}
+header .container .logo_wrapper img {
+  height: 120px;
+  padding: 1rem 0;
 }
 
 .nav_list {
