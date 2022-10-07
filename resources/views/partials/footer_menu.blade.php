@@ -1,0 +1,156 @@
+@php
+$links = [
+    [
+        'title' => 'Dc comics',
+        'links' => [
+            [
+                'href' => '#',
+                'text' => 'Characters',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Comics',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Movies',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Tv',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Games',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Videos',
+            ],
+            [
+                'href' => '#',
+                'text' => 'News',
+            ],
+        ],
+        'titleAlt' => 'Shop',
+        'linksAlt' => [
+            [
+                'href' => '#',
+                'text' => 'Shop DC',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Shop DC Collectibles',
+            ],
+        ],
+    ],
+    [
+        'title' => 'Dc',
+        'links' => [
+            [
+                'href' => '#',
+                'text' => 'Terms of use',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Privacy policy (New)',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Ad Choices',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Advertising',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Jobs',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Subscriptions',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Talent Workshops',
+            ],
+            [
+                'href' => '#',
+                'text' => 'CPSC Certificates',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Ratings',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Shop help',
+            ],
+            [
+                'href' => '#',
+                'text' => 'Contact us',
+            ],
+        ],
+    ],
+    [
+        'title' => 'Sites',
+        'links' => [
+            [
+                'href' => '#',
+                'text' => 'Dc',
+            ],
+            [
+                'href' => '#',
+                'text' => 'MAD Magazine',
+            ],
+            [
+                'href' => '#',
+                'text' => 'DC Kids',
+            ],
+            [
+                'href' => '#',
+                'text' => 'DC Universe',
+            ],
+            [
+                'href' => '#',
+                'text' => 'DC Power visa',
+            ],
+        ],
+    ],
+];
+@endphp
+<div class="banner menu">
+    <div class="container">
+        <div class="footer_menu">
+            @foreach ($links as $link)
+                <div class="menu_item">
+                    <h3 class="item_title">
+                        {{ $link['title'] }}
+                    </h3>
+                    <ul class="item_list-wrapper">
+                        @foreach ($link['links'] as $item)
+                            <li class="list_item">
+                                <a href="{{ $item['href'] }}" class="item_link capitalize">
+                                    {{ $item['text'] }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                    {{-- <h3 class="item_title">
+                        {{ $link['titleAlt'] }}
+                    </h3>
+                    <ul class="item_list-wrapper">
+                        @foreach ($link['linksAlt'] as $item2)
+                            <li class="list_item">
+                                <a :href="{{$item2['href']}}" class="item_link capitalize">
+                                    {{ $item2['text'] }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul> --}}
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>

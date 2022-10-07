@@ -45,7 +45,6 @@ header .container {
   display: flex;
   padding: 0.5rem 0.75rem 0;
 }
-
 header .container .logo_wrapper {
   margin-right: auto;
 }
@@ -55,18 +54,15 @@ header .container .logo_wrapper {
   height: 100%;
   display: flex;
 }
-
 .nav_list .list_item {
   height: 100%;
   display: flex;
   position: relative;
   align-items: center;
 }
-
 .nav_list .list_item.active .item_link {
   color: #2195f3;
 }
-
 .nav_list .list_item.active .item_link::after {
   content: "";
   position: absolute;
@@ -77,13 +73,103 @@ header .container .logo_wrapper {
   transform: translateX(-50%);
   background-color: #2195f3;
 }
-
 .nav_list .list_item .item_link {
   font-weight: bold;
   padding: 1rem 0;
 }
-
 .nav_list .list_item .item_link:hover {
   color: #2195f3;
 }
 
+footer {
+  position: relative;
+}
+footer .banner.join {
+  padding: 3rem 0;
+  color: #fff;
+  background-color: #222;
+}
+footer .banner.join .container {
+  display: flex;
+  align-items: center;
+}
+footer .banner.join .container .btn.sign-up_cta {
+  border: 2px solid #2195f3;
+}
+footer .banner.join .container h3 {
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 1rem;
+  color: #2195f3;
+}
+footer .banner.blue {
+  background-color: #2195f3;
+}
+footer .banner.blue .container .footer_list-merch {
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+}
+footer .banner.blue .container .footer_list-merch .list_item {
+  flex-grow: 1;
+}
+footer .banner.blue .container .footer_list-merch .list_item .item_link {
+  gap: 1rem;
+  display: flex;
+  font-size: 0.85rem;
+  font-weight: bold;
+  align-items: center;
+  color: #fff;
+}
+footer .banner.menu {
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/footer-bg.jpg");
+}
+footer .banner.menu .container {
+  display: flex;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url("../img/dc-logo-bg.png");
+}
+footer .banner.menu .container .footer_menu {
+  gap: 2rem;
+  display: flex;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+footer .banner.menu .container .footer_menu .menu_item {
+  flex-grow: 1;
+}
+footer .banner.menu .container .footer_menu .menu_item h3 {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+footer .banner.menu .container .footer_menu .menu_item .item_list-wrapper {
+  padding-bottom: 1rem;
+}
+footer .banner.menu .container .footer_menu .menu_item .item_list-wrapper .list_item {
+  padding: 0.1rem 0;
+}
+footer .banner.menu .container .footer_menu .menu_item .item_list-wrapper .list_item .item_link {
+  opacity: 0.7;
+  padding: 0.1rem 0;
+}
+footer .banner.menu .container .footer_menu .menu_item .item_list-wrapper .list_item .item_link:hover {
+  opacity: 1;
+}
+
+.social_list {
+  display: flex;
+  gap: 1rem;
+}
+.social_list .list_item .item_link {
+  opacity: 0.8;
+}
+.social_list .list_item .item_link:hover {
+  opacity: 1;
+}
