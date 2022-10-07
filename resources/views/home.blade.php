@@ -1,11 +1,7 @@
 @extends('layout.app')
 
-<h1>
-    Hello Comics!
-</h1>
+@section('metaTitle', 'Home Page - DC Comics')
 
-@section('content')
-    <h2>
-        Yield Content
-    </h2>
+@section('mainContent')
+
 @endsection

@@ -8,3 +8,82 @@ html {
   font-family: sans-serif;
 }
 
+ul,
+menu {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 0.75rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.btn {
+  padding: 0.75rem 0.5rem;
+  border: 2px solid transparent;
+}
+
+header .container {
+  display: flex;
+  padding: 0.5rem 0.75rem 0;
+}
+
+header .container .logo_wrapper {
+  margin-right: auto;
+}
+
+.nav_list {
+  gap: 1.5rem;
+  height: 100%;
+  display: flex;
+}
+
+.nav_list .list_item {
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.nav_list .list_item.active .item_link {
+  color: #2195f3;
+}
+
+.nav_list .list_item.active .item_link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 0.25rem;
+  transform: translateX(-50%);
+  background-color: #2195f3;
+}
+
+.nav_list .list_item .item_link {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.nav_list .list_item .item_link:hover {
+  color: #2195f3;
+}
+

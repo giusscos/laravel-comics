@@ -8,6 +8,14 @@
     <title>@yield('metaTitle')</title>
 </head>
 <body>
-    @yield('content')
+    {{-- Header --}}
+    @include('partials.header')
+    {{-- Main --}}
+    <main>
+        @yield('mainContent')
+    </main>
+    
+    {{-- Footer --}}
+    @include('partials.footer')
 </body>
 </html>
