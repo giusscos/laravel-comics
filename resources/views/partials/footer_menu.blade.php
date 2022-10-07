@@ -32,8 +32,8 @@ $links = [
                 'text' => 'News',
             ],
         ],
-        'titleAlt' => 'Shop',
-        'linksAlt' => [
+        'title2' => 'Shop',
+        'links2' => [
             [
                 'href' => '#',
                 'text' => 'Shop DC',
@@ -92,6 +92,8 @@ $links = [
                 'text' => 'Contact us',
             ],
         ],
+        'title2' => '',
+        'links2' => [],
     ],
     [
         'title' => 'Sites',
@@ -117,6 +119,8 @@ $links = [
                 'text' => 'DC Power visa',
             ],
         ],
+        'title2' => '',
+        'links2' => [],
     ],
 ];
 @endphp
@@ -137,18 +141,18 @@ $links = [
                             </li>
                         @endforeach
                     </ul>
-                    {{-- <h3 class="item_title">
-                        {{ $link['titleAlt'] }}
+                    <h3 class="item_title">
+                        {{ $link['title2'] }}
                     </h3>
                     <ul class="item_list-wrapper">
-                        @foreach ($link['linksAlt'] as $item2)
+                        @foreach ($link['links2'] as $item2)
                             <li class="list_item">
-                                <a :href="{{$item2['href']}}" class="item_link capitalize">
+                                <a :href="{{ $item2['href'] }}" class="item_link capitalize">
                                     {{ $item2['text'] }}
                                 </a>
                             </li>
                         @endforeach
-                    </ul> --}}
+                    </ul>
                 </div>
             @endforeach
         </div>
