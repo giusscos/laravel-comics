@@ -156,5 +156,9 @@ $links = [
                 </div>
             @endforeach
         </div>
+        <p class="info_footer-menu">
+            All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <a href='#' class="info_link">noted here</a>. All rights reserved.<br>
+            <a href="#" class="info_link">Cookie Settings</a>
+        </p>
     </div>
 </div>
