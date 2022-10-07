@@ -174,9 +174,62 @@ footer .banner.menu .container .footer_menu .menu_item .item_list-wrapper .list_
   opacity: 1;
 }
 
-.jumbo {
+main {
+  font-weight: bold;
+  color: #fff;
+  background-color: #111;
+}
+main .jumbo {
   height: 400px;
   background-image: url("../img/jumbotron.jpg");
   background-position: center top;
   background-size: cover;
+}
+main .series_wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .series_wrapper .btn.info_btn {
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  background-color: #2195f3;
+}
+main .series_wrapper .btn.viewer_btn {
+  opacity: 1;
+  cursor: pointer;
+  align-self: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  background-color: #2195f3;
+}
+
+.cards_wrapper {
+  padding: 2rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards_wrapper .card {
+  padding: 0.5rem 0.75rem;
+  flex-basis: 16.6666666667%;
+}
+.cards_wrapper .card .img_wrapper {
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.cards_wrapper .card .img_wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.cards_wrapper .card .card_series {
+  padding: 1rem 0;
+  font-weight: bold;
+  font-size: 0.75rem;
 }

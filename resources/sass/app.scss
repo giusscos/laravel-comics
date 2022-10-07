@@ -4,9 +4,66 @@
 @import './header';
 @import './footer';
 
-.jumbo {
-    height: 400px;
-    background-image: url("../img/jumbotron.jpg");
-    background-position: center top;
-    background-size: cover;
+main {
+    font-weight: bold;
+    color: $dc-light_bg;
+    background-color: $dc-dark_bg;
+
+    .jumbo {
+        height: 400px;
+        background-image: url("../img/jumbotron.jpg");
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .series_wrapper {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .btn {
+            &.info_btn {
+                font-size: 1.25rem;
+                font-weight: bold;
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+                background-color: $dc-accent_link;
+            }
+
+            &.viewer_btn {
+                opacity: 1;
+                cursor: pointer;
+                align-self: center;
+                font-size: 0.85rem;
+                font-weight: bold;
+                padding: 0.5rem 2rem;
+                background-color: $dc-accent_link;
+            }
+        }
+    }
+}
+
+.cards_wrapper {
+    padding: 2rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        padding: 0.5rem 0.75rem;
+        flex-basis: calc(100% / 6);
+        .img_wrapper {
+            overflow: hidden;
+            aspect-ratio: 1/1;
+            img {
+                object-fit: cover;
+                object-position: center top;
+            }
+        }
+        .card_series {
+            padding: 1rem 0;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+    }
 }
