@@ -3,3 +3,10 @@
 
 @import './header';
 @import './footer';
+
+.jumbo {
+    height: 400px;
+    background-image: url("../img/jumbotron.jpg");
+    background-position: center top;
+    background-size: cover;
+}

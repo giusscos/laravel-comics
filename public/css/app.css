@@ -173,3 +173,10 @@ footer .banner.menu .container .footer_menu .menu_item .item_list-wrapper .list_
 .social_list .list_item .item_link:hover {
   opacity: 1;
 }
+
+.jumbo {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-position: center top;
+  background-size: cover;
+}
