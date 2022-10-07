@@ -3,7 +3,7 @@ $cards = @config('comics');
 @endphp
 
 <div class="cards_wrapper">
-    @foreach ($cards as $card)
+    @forelse ($cards as $card)
         <div class="card">
             <a href="#" title="{{ $card['series'] }}">
                 <div class="img_wrapper">
@@ -14,5 +14,9 @@ $cards = @config('comics');
                 </h3>
             </a>
         </div>
-    @endforeach
+        @empty
+            <h4>
+                Non sono presenti Comics :(
+            </h4>
+        @endempty
 </div>
