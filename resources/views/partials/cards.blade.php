@@ -5,7 +5,7 @@ $cards = @config('comics');
 <div class="cards_wrapper">
     @forelse ($cards as $card)
         <div class="card">
-            <a href="#" title="{{ $card['series'] }}">
+            <a href="comics/{{$loop->index }}" title="{{ $card['series'] }}">
                 <div class="img_wrapper">
                     <img src="{{ $card['thumb'] }}" alt="{{ $card['series'] }}" />
                 </div>

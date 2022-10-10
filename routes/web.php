@@ -18,6 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/comics', function () {
-    return view('comics
-    ');
-});
+    return view('comics');
+})->name('comics');
+
+Route::get('/comics/{id}', function($id){
+    $cards = config('comics');
+    $card = $cards[$id];
+    
+    return $card;
+})->where('id', '[0-9]+')->name('comic');
