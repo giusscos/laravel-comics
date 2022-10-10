@@ -43,23 +43,107 @@ main {
             }
         }
     }
+
+    .comic_wrapper {
+        font-weight: normal;
+        color: $dc-dark_bg;
+        background: rgb(33, 149, 243);
+        background: linear-gradient(180deg, rgba(33, 149, 243, 1) 15%, rgba(255, 255, 255, 1) 15%);
+
+        .comic-thumb {
+            height: 100px;
+
+            img {
+                transform: translateY(-75%);
+                border: 1px solid $dc-light_bg;
+            }
+        }
+
+        .comic-info {
+            padding: 2rem 0 3rem;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+
+            .info {
+                flex-basis: calc((100% / 4) * 3);
+                padding-right: 2rem;
+
+                .title {
+                    font-size: 2rem;
+                    padding: 1.5rem 0;
+                }
+
+                .price {
+                    padding: 0 1rem;
+
+                    display: flex;
+                    align-items: center;
+                    
+                    color: #fff;
+                    font-weight: bold;
+                    background-color: #0aa60a;
+                    border-bottom: 1px solid $dc-dark_bg;
+
+                    span {
+                        opacity: 0.7;
+                        padding: 1.2rem 0.5rem;
+
+                        &.store {
+                            padding-right: 1rem;
+                            border-right: 1px solid $dc-dark_bg;
+                            margin-left: auto;
+                        }
+                    }
+
+                    select {
+                        font-weight: bold;
+                        font-size: 1rem;
+                        padding-left: 0.75rem;
+                    }
+                }
+
+                .desc{
+                    opacity: 0.7;
+                    padding: 1.75rem 0;
+                    line-height: 1.5;
+                }
+            }
+
+            .adv {
+                flex-grow: 1;
+                text-align: right;
+
+                span {
+                    display: block;
+                    font-weight: bold;
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
 }
 
 .cards_wrapper {
     padding: 2rem 0.5rem;
     display: flex;
     flex-wrap: wrap;
+
     .card {
         padding: 0.5rem 0.75rem;
         flex-basis: calc(100% / 6);
+
         .img_wrapper {
             overflow: hidden;
             aspect-ratio: 1/1;
+
             img {
                 object-fit: cover;
                 object-position: center top;
             }
         }
+
         .card_series {
             padding: 1rem 0;
             font-weight: bold;

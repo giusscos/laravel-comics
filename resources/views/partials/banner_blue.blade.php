@@ -38,7 +38,7 @@ $links = [
             @foreach($links as $link)
             <li class="list_item">
                 <a href="{{$link['href']}}" class="item_link">
-                    <img src="{{$link['src']}}" alt="{{$link['text']}}" height="{{$link['height']}}" />
+                    <img src="{{@asset($link['src'])}}" alt="{{$link['text']}}" height="{{$link['height']}}" />
                     {{ $link['text'] }}
                 </a>
             </li>
