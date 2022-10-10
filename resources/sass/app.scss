@@ -125,6 +125,49 @@ main {
     }
 }
 
+.detail_wrapper{
+    padding: 2rem 0 5rem;
+    background-color: #ddd;
+    border-top: 1px solid #888;
+
+    .container{
+        gap: 1.5rem;
+        display: flex;
+
+        .cat-detail{
+            flex-basis: calc(100% / 2 );
+        }
+    }
+
+    .cat-title{
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .list{
+        border-top: 1px solid #888;
+        
+        .list-item{
+            display: flex;
+            align-items: flex-start;
+            
+            padding: 1rem 0;
+            border-bottom: 1px solid #888;
+
+            .title{
+                flex-basis: calc((100% / 3) * 5);
+            }
+            .content{
+                flex-basis: calc((100% / 2) * 5);
+
+                a{
+                    color: $dc-accent_link;
+                }
+            }
+        }
+    }
+}
+
 .cards_wrapper {
     padding: 2rem 0.5rem;
     display: flex;

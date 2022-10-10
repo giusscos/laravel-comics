@@ -310,6 +310,41 @@ main .comic_wrapper .comic-info .adv span {
   padding: 0.5rem 0;
 }
 
+.detail_wrapper {
+  padding: 2rem 0 5rem;
+  background-color: #ddd;
+  border-top: 1px solid #888;
+}
+.detail_wrapper .container {
+  gap: 1.5rem;
+  display: flex;
+}
+.detail_wrapper .container .cat-detail {
+  flex-basis: 50%;
+}
+.detail_wrapper .cat-title {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+.detail_wrapper .list {
+  border-top: 1px solid #888;
+}
+.detail_wrapper .list .list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #888;
+}
+.detail_wrapper .list .list-item .title {
+  flex-basis: 166.6666666667%;
+}
+.detail_wrapper .list .list-item .content {
+  flex-basis: 250%;
+}
+.detail_wrapper .list .list-item .content a {
+  color: #2195f3;
+}
+
 .cards_wrapper {
   padding: 2rem 0.5rem;
   display: flex;
