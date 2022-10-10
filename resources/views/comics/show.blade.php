@@ -1,8 +1,8 @@
 @extends('layout.app')
 
-@section('metaTitle', 'Comics - DC Comics')
-
 @section('mainContent')
     @include('partials.jumbo')
-    @include('comics.index')
+    <div class="series_wrapper container">
+        @dump($comic)
+    </div>
 @endsection

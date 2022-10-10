@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\VarDumper\Cloner\Data;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +16,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('/comics', function () {
-    return view('comics');
+Route::get('/comics ', function () {
+    return view('comics.index');
 })->name('comics');
 
-Route::get('/comics/{id}', function($id){
+Route::get('/comics/{id}', function ($id) {
     $cards = config('comics');
-    $card = $cards[$id];
-    
-    return $card;
+    if ($id < count($cards)) {
+        $card = $cards[$id];
+        $data = [
+            'comic' => $card
+        ];
+
+        return view('comics.show', $data);
+    } else {
+        abort(404);
+    }
 })->where('id', '[0-9]+')->name('comic');
