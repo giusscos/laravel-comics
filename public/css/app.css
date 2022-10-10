@@ -233,7 +233,7 @@ main .series_wrapper .btn.info_btn {
   position: absolute;
   top: 0;
   transform: translateY(-50%);
-  background-color: #2195f3;
+  background-color: #0282F9;
 }
 main .series_wrapper .btn.viewer_btn {
   opacity: 1;
@@ -242,13 +242,13 @@ main .series_wrapper .btn.viewer_btn {
   font-size: 0.85rem;
   font-weight: bold;
   padding: 0.5rem 2rem;
-  background-color: #2195f3;
+  background-color: #0282F9;
 }
 main .comic_wrapper {
   font-weight: normal;
   color: #111;
-  background: rgb(33, 149, 243);
-  background: linear-gradient(180deg, rgb(33, 149, 243) 80px, rgb(255, 255, 255) 80px);
+  background: #0282F9;
+  background: linear-gradient(180deg, #0282F9 80px, #fff 80px);
 }
 main .comic_wrapper .comic-thumb {
   height: 80px;

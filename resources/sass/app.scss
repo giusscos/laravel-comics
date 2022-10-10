@@ -29,7 +29,7 @@ main {
                 position: absolute;
                 top: 0;
                 transform: translateY(-50%);
-                background-color: $dc-accent_link;
+                background-color: $dc-accent;
             }
 
             &.viewer_btn {
@@ -39,7 +39,7 @@ main {
                 font-size: 0.85rem;
                 font-weight: bold;
                 padding: 0.5rem 2rem;
-                background-color: $dc-accent_link;
+                background-color: $dc-accent;
             }
         }
     }
@@ -47,8 +47,8 @@ main {
     .comic_wrapper {
         font-weight: normal;
         color: $dc-dark_bg;
-        background: rgb(33, 149, 243);
-        background: linear-gradient(180deg, rgba(33, 149, 243, 1) 80px, rgba(255, 255, 255, 1) 80px);
+        background: $dc-accent;
+        background: linear-gradient(180deg, $dc-accent 80px, #fff 80px);
 
         .comic-thumb {
             height: 80px;
@@ -134,9 +134,9 @@ main {
 .detail_wrapper{
     padding: 1.75rem 0 6.25rem;
     
-    color: #003F5E;
-    background-color: #F6F6F6;
-    border-top: 1px solid #ccc;
+    color: $dc-title_blu;
+    background-color: $dc-detail_bg;
+    border-top: 1px solid $dc-border;
 
     .container{
         gap: 3rem;
@@ -153,14 +153,14 @@ main {
     }
 
     .list{
-        border-top: 1px solid #ccc;
+        border-top: 1px solid $dc-border;
         
         .list-item{
             display: flex;
             align-items: flex-start;
             
             padding: 0.75rem 0;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid $dc-border;
 
             .title{
                 flex-basis: calc((100% / 3) * 5);
@@ -169,7 +169,7 @@ main {
                 flex-basis: calc((100% / 2) * 5);
 
                 a{
-                    color: #00A9DF;
+                    color: $dc-list_content;
                 }
             }
         }
