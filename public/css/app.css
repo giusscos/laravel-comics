@@ -248,29 +248,30 @@ main .comic_wrapper {
   font-weight: normal;
   color: #111;
   background: rgb(33, 149, 243);
-  background: linear-gradient(180deg, rgb(33, 149, 243) 15%, rgb(255, 255, 255) 15%);
+  background: linear-gradient(180deg, rgb(33, 149, 243) 80px, rgb(255, 255, 255) 80px);
 }
 main .comic_wrapper .comic-thumb {
-  height: 100px;
+  height: 80px;
 }
 main .comic_wrapper .comic-thumb img {
-  transform: translateY(-75%);
+  transform: translateY(-80%);
   border: 1px solid #fff;
 }
 main .comic_wrapper .comic-info {
-  padding: 2rem 0 3rem;
+  padding: 5rem 0;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
 main .comic_wrapper .comic-info .info {
-  flex-basis: 75%;
-  padding-right: 2rem;
+  flex-basis: 300%;
+  padding-right: 1.75rem;
 }
 main .comic_wrapper .comic-info .info .title {
+  color: #003F5E;
   font-size: 2rem;
-  padding: 1.5rem 0;
+  padding: 0 0 2rem;
 }
 main .comic_wrapper .comic-info .info .price {
   padding: 0 1rem;
@@ -278,12 +279,12 @@ main .comic_wrapper .comic-info .info .price {
   align-items: center;
   color: #fff;
   font-weight: bold;
-  background-color: #0aa60a;
+  background-color: #55BA59;
   border-bottom: 1px solid #111;
 }
 main .comic_wrapper .comic-info .info .price span {
   opacity: 0.7;
-  padding: 1.2rem 0.5rem;
+  padding: 0.8rem 0.5rem;
 }
 main .comic_wrapper .comic-info .info .price span.store {
   padding-right: 1rem;
@@ -297,11 +298,11 @@ main .comic_wrapper .comic-info .info .price select {
 }
 main .comic_wrapper .comic-info .info .desc {
   opacity: 0.7;
-  padding: 1.75rem 0;
+  padding: 1.5rem 0;
   line-height: 1.5;
 }
 main .comic_wrapper .comic-info .adv {
-  flex-grow: 1;
+  flex-basis: 150%;
   text-align: right;
 }
 main .comic_wrapper .comic-info .adv span {
@@ -309,14 +310,20 @@ main .comic_wrapper .comic-info .adv span {
   font-weight: bold;
   padding: 0.5rem 0;
 }
+main .comic_wrapper .comic-info .adv img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .detail_wrapper {
-  padding: 2rem 0 5rem;
-  background-color: #ddd;
-  border-top: 1px solid #888;
+  padding: 1.75rem 0 6.25rem;
+  color: #003F5E;
+  background-color: #F6F6F6;
+  border-top: 1px solid #ccc;
 }
 .detail_wrapper .container {
-  gap: 1.5rem;
+  gap: 3rem;
   display: flex;
 }
 .detail_wrapper .container .cat-detail {
@@ -324,16 +331,16 @@ main .comic_wrapper .comic-info .adv span {
 }
 .detail_wrapper .cat-title {
   font-size: 1.5rem;
-  padding: 1.5rem 0;
+  padding: 0 0 1.9rem;
 }
 .detail_wrapper .list {
-  border-top: 1px solid #888;
+  border-top: 1px solid #ccc;
 }
 .detail_wrapper .list .list-item {
   display: flex;
   align-items: flex-start;
-  padding: 1rem 0;
-  border-bottom: 1px solid #888;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ccc;
 }
 .detail_wrapper .list .list-item .title {
   flex-basis: 166.6666666667%;
@@ -342,7 +349,7 @@ main .comic_wrapper .comic-info .adv span {
   flex-basis: 250%;
 }
 .detail_wrapper .list .list-item .content a {
-  color: #2195f3;
+  color: #00A9DF;
 }
 
 .cards_wrapper {
