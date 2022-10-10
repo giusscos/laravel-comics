@@ -1,60 +1,50 @@
 @php
 $links = [
     [
-        'href' => '#',
+        'href' => 'characters',
         'text' => 'Characters',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'comics',
         'text' => 'Comics',
-        'currentStatus' => 'active',
     ],
     [
-        'href' => '#',
+        'href' => 'movies',
         'text' => 'Movies',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'tv',
         'text' => 'Tv',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'games',
         'text' => 'Games',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'collectibles',
         'text' => 'Collectibles',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'videos',
         'text' => 'Videos',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'fans',
         'text' => 'Fans',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'news',
         'text' => 'News',
-        'currentStatus' => '',
     ],
     [
-        'href' => '#',
+        'href' => 'shop',
         'text' => 'Shop',
-        'currentStatus' => '',
     ],
 ];
 @endphp
 <ul class="nav_list uppercase">
     @foreach ($links as $link)
-        <li class="list_item {{ $link['currentStatus'] }}">
+        <li class="list_item {{ Route::currentRouteName() === $link['href'] ? 'active' : ''}}">
             <a class="item_link" href="{{ $link['href'] }}">
                 {{ $link['text'] }}
             </a>
