@@ -1,7 +1,7 @@
 @php
 $links = [
     [
-        'href' => 'characters',
+        'href' => null,
         'text' => 'Characters',
     ],
     [
@@ -9,43 +9,43 @@ $links = [
         'text' => 'Comics',
     ],
     [
-        'href' => 'movies',
+        'href' => null,
         'text' => 'Movies',
     ],
     [
-        'href' => 'tv',
+        'href' => null,
         'text' => 'Tv',
     ],
     [
-        'href' => 'games',
+        'href' => null,
         'text' => 'Games',
     ],
     [
-        'href' => 'collectibles',
+        'href' => null,
         'text' => 'Collectibles',
     ],
     [
-        'href' => 'videos',
+        'href' => null,
         'text' => 'Videos',
     ],
     [
-        'href' => 'fans',
+        'href' => null,
         'text' => 'Fans',
     ],
     [
-        'href' => 'news',
+        'href' => null,
         'text' => 'News',
     ],
     [
-        'href' => 'shop',
+        'href' => null,
         'text' => 'Shop',
     ],
 ];
 @endphp
 <ul class="nav_list uppercase">
     @foreach ($links as $link)
-        <li class="list_item {{ Route::currentRouteName() === $link['href'] ? 'active' : ''}}">
-            <a class="item_link" href="{{ $link['href'] }}">
+        <li class="list_item {{ Route::currentRouteName() == $link['href'] ? 'active' : ''}}">
+            <a class="item_link" href="{{ $link['href'] != null ? route($link['href']) : route('home') }}">
                 {{ $link['text'] }}
             </a>
         </li>
